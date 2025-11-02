@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/StrategyToolKit/app_settings"
+		},
+		{
+			"path": "../../Downloads/StrategyToolKit/data_input_&_update"
+		},
+		{
+			"path": "../../Downloads/StrategyToolKit/strategy_dashboard"
+		},
+		{
+			"path": "../../Downloads/StrategyToolKit/welcome"
+		}
+	],
+	"settings": {}
+}
