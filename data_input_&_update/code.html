@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Update Strategy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark p-4 border-b border-white/10">
+<div class="text-gray-900 dark:text-white flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold flex-1 ml-2">Update Strategy</h2>
+</div>
+<!-- Main Content -->
+<main class="flex-1 p-4">
+<div class="flex flex-col gap-4">
+<!-- Accordions for Sections -->
+<div class="flex flex-col gap-3">
+<!-- Strategic Themes Section -->
+<details class="flex flex-col rounded-lg border border-gray-200 dark:border-[#3b4354] bg-white dark:bg-[#1C1F27]/50 px-4 group" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-3">
+<p class="text-gray-900 dark:text-white text-base font-semibold">Strategic Themes</p>
+<span class="material-symbols-outlined text-gray-500 dark:text-white group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pb-4 pt-2 flex flex-col gap-4">
+<label class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-white text-sm font-medium pb-2">Theme Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-background-light dark:bg-[#101622] h-12 placeholder:text-gray-500 dark:placeholder:text-[#9da6b9] px-4 text-sm" value="Market Expansion Q4"/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-white text-sm font-medium pb-2">Update Summary</p>
+<textarea class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-background-light dark:bg-[#101622] min-h-32 placeholder:text-gray-500 dark:placeholder:text-[#9da6b9] p-4 text-sm" placeholder="Enter a brief summary of the progress..."></textarea>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-white text-sm font-medium pb-2">Status</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-background-light dark:bg-[#101622] h-12 placeholder:text-gray-500 dark:placeholder:text-[#9da6b9] px-4 text-sm">
+<option>On Track</option>
+<option>Needs Attention</option>
+<option>At Risk</option>
+<option>Achieved</option>
+</select>
+</label>
+</div>
+</details>
+<!-- KPIs Section -->
+<details class="flex flex-col rounded-lg border border-gray-200 dark:border-[#3b4354] bg-white dark:bg-[#1C1F27]/50 px-4 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-3">
+<p class="text-gray-900 dark:text-white text-base font-semibold">Key Performance Indicators (KPIs)</p>
+<span class="material-symbols-outlined text-gray-500 dark:text-white group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pb-4 pt-2 flex flex-col gap-6">
+<!-- KPI Item 1 -->
+<div class="flex flex-col gap-3 p-4 rounded-lg border border-gray-200 dark:border-[#3b4354]/50">
+<p class="font-medium text-gray-800 dark:text-gray-100">Customer Acquisition Cost (CAC)</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-white text-sm font-medium pb-2">Current Value ($)</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-background-light dark:bg-[#101622] h-12 placeholder:text-gray-500 dark:placeholder:text-[#9da6b9] px-4 text-sm" type="number" value="125"/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-white text-sm font-medium pb-2">Status</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-background-light dark:bg-[#101622] h-12 placeholder:text-gray-500 dark:placeholder:text-[#9da6b9] px-4 text-sm">
+<option>At Risk</option>
+<option>On Track</option>
+</select>
+</label>
+</div>
+<label class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-white text-sm font-medium pb-2">Note (Optional)</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-background-light dark:bg-[#101622] h-12 placeholder:text-gray-500 dark:placeholder:text-[#9da6b9] px-4 text-sm" placeholder="Add a short note..."/>
+</label>
+</div>
+<!-- KPI Item 2 -->
+<div class="flex flex-col gap-3 p-4 rounded-lg border border-gray-200 dark:border-[#3b4354]/50">
+<p class="font-medium text-gray-800 dark:text-gray-100">Monthly Recurring Revenue (MRR)</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-white text-sm font-medium pb-2">Current Value ($)</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-background-light dark:bg-[#101622] h-12 placeholder:text-gray-500 dark:placeholder:text-[#9da6b9] px-4 text-sm" type="number" value="550000"/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-white text-sm font-medium pb-2">Status</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-background-light dark:bg-[#101622] h-12 placeholder:text-gray-500 dark:placeholder:text-[#9da6b9] px-4 text-sm">
+<option>On Track</option>
+<option>At Risk</option>
+</select>
+</label>
+</div>
+</div>
+</div>
+</details>
+<!-- Key Metrics Section -->
+<details class="flex flex-col rounded-lg border border-gray-200 dark:border-[#3b4354] bg-white dark:bg-[#1C1F27]/50 px-4 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-3">
+<p class="text-gray-900 dark:text-white text-base font-semibold">Key Metrics</p>
+<span class="material-symbols-outlined text-gray-500 dark:text-white group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pb-4 pt-2 flex flex-col gap-6">
+<!-- Metric Item 1 -->
+<div class="flex flex-col gap-3 p-4 rounded-lg border border-gray-200 dark:border-[#3b4354]/50">
+<p class="font-medium text-gray-800 dark:text-gray-100">Customer Churn Rate (%)</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-white text-sm font-medium pb-2">Current Value</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-background-light dark:bg-[#101622] h-12 placeholder:text-gray-500 dark:placeholder:text-[#9da6b9] px-4 text-sm" step="0.1" type="number" value="2.1"/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-white text-sm font-medium pb-2">Status</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-background-light dark:bg-[#101622] h-12 placeholder:text-gray-500 dark:placeholder:text-[#9da6b9] px-4 text-sm">
+<option>Needs Attention</option>
+<option>On Track</option>
+<option>At Risk</option>
+</select>
+</label>
+</div>
+</div>
+</div>
+</details>
+</div>
+</div>
+</main>
+<!-- Floating Action Button Bar -->
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4 border-t border-white/10">
+<button class="w-full h-12 flex items-center justify-center rounded-lg bg-primary text-white font-semibold text-base hover:bg-primary/90 transition-colors">
+                Save Changes
+            </button>
+</footer>
+</div>
+</body></html>
